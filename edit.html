@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>about</title>
+	<!-- meta -->
+         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  
+      
+   
+
+       <link href="css/style.css" rel="stylesheet">
+    
+        <link href="css/style1.css" rel="stylesheet">
+        <link href="css/style-color.css" rel="stylesheet">
+
+         <link href="css/gallery.css" rel="stylesheet">
+    <link href="css/gallery-grid.css" rel="stylesheet">
+        <!-- <link rel=stylesheet href="css/bootstrap.css"> -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css">
+
+
+
+
+       <link href="css/bootstrap.css" rel="stylesheet"/>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+
+<!-- stylesheets -->
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/font_icon/css/pe-icon-7-stroke.css">
+        <link rel="stylesheet" href="assets/font_icon/css/helper.css">
+        <link rel="stylesheet" href="assets/css/owl.carousel.css">
+        <link rel="stylesheet" href="assets/css/owl.theme.css">
+        <link rel="stylesheet" href="assets/css/animate.css">
+        <link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="ionicons.min.css">
+        <!-- google fonts -->
+        <link href='http://fonts.googleapis.com/css?family=Dosis:200,300,400,500|Lato:300,400,700,900,300italic,400italic,700italic,900italic|Raleway:400,200,300,500,100|Titillium+Web:400,200,300italic,300,200italic' rel='stylesheet' type='text/css'>
+
+        <script src="assets/js/modernizr.js"></script>
+<style>
+
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html{
+    font-family: 'Roboto', sans-serif;
+    font-size: 10px;
+    box-sizing: border-box;
+}
+
+  
+#im:hover{
+    transition: linear all 0.3s;
+    transform: scale(1.1,1.1);
+    opacity: 0.5;
+}
+#hello1 {
+    background: #0da4e0;
+    height: 5px;
+}
+#n ul li :hover{
+    background: #0da4e0;
+    transition: all ease-in-out 0.40s;
+}
+ {
+    margin: 0;
+    padding: 0;
+    background:#262626; 
+}
+
+.rating
+{
+    position: absolute;
+    top: 30%;
+    left: 50%; 
+    transform: translate(-50%,-50%)  rotateY(180deg);
+    display: flex;
+}
+
+.rating input{
+    display: none;
+}
+
+.rating label
+{
+    display: block;
+    cursor: pointer;
+    width: 50px;
+    
+}
+
+.rating label:before
+{
+     content: '\f005';
+     font-family: fontawesome;
+     position: relative;
+     display: block;
+     font-size: 50px;
+     color: #101010;
+}
+
+.rating label:after
+{
+     content: '\f005';
+     font-family: fontAwesome;
+     position: absolute;
+     display: block;
+     font-size: 50px;
+     color: #1f9cff;
+     top: 0;
+     opacity: 0;
+     transition: .5s;
+     text-shadow: 0 2px 5px rgba(0,0,0,.5); 
+}
+.rating label:hover:after,
+.rating label:hover ~ label:after,
+.rating input:checked ~ label:after
+{
+    opacity: 1;
+}
+
+
+
+
+.containerr{
+    width: 100%;
+    max-width: 80rem;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+.accordion-item{
+    background-color: #283042;
+    border-radius: .4rem;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    box-shadow: .5rem 2px .5rem rgba(0,0,0,.1);
+}
+
+.accordion-link{
+    font-size: 1.6rem;
+    color: rgba(255,255,255,.8);
+    text-decoration: none;
+    background-color: #283042;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 0;
+
+}
+
+
+.accordion-link i{
+    color: #e7d5ff;
+    padding: -5rem;
+}
+.accordion-link .ion-md-remove{
+    display: none;
+}
+
+.answer{
+    max-height: 0;
+    overflow: hidden;
+    position: relative;
+    background-color: #212828;
+    transition: max-height 650ms;
+}
+
+.answer::before{
+    content: "";
+    position: absolute;
+    width: .6rem;
+    height: 90%;
+    background-color: #8fc460;
+    top:50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+
+.answer p{
+    color: rgba(255,255,255,.6);
+    font-size: 1.4rem;
+    padding: 2rem;
+}
+.accordion-item:target .answer{
+    max-height: 20rem;
+}
+.according-item:target .according-link .ion-md-add{
+    display: none;
+}
+
+.according-item:target .according-link .ion-md-remove{
+    display: block;
+}
+</style>
+     
+</head>
+
+<body>
+ !-- bavigtion bar-->
+<div class="navbar navbar-inverse" style="border-radius:0px;">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a href="#" class="navbar-brand"><img src="img/logo/logo.png">Choice park</a>
+
+            <button type="button" class="navbar-toggle" data-target="#n" data-toggle="collapse">
+
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+
+            </button>
+                </div>
+
+            <div id="n" class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+
+                <li><a href="#"> Home <span class="glyphicon glyphicon-home"></span></a></li>
+
+                <li><a href="#"> Aboutus <span class="glyphicon glyphicon-avator"></span></a></li>
+
+                <li><a href="#"> Contactus <span class="glyphicon glyphicon-phone"></span></a></li>
+
+               <li><a href="#"> FAQ <span class="glyphicon glyphicon-flag"></span></a></li>
+
+                <li><a href="#"> Gallery <span class="glyphicon glyphicon-th"></span></a></li>
+                    <li><a href="#">Shop<span class="glyphicon glyphicon-plus"></span></a></li>
+                        <li><a href="#"> NEWS <span class="glyphicon glyphicon-list-alt"></span></a></li>
+                            <li><a href="#"> Search <span class="glyphicon glyphicon-search"></span></a></li>
+
+            </ul>
+                
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#"><span class="glyphicon glyphicon-user"></span>Sign in</a></li>
+
+                <li><a href="#"><span class="glyphicon  glyphicon-log-in"></span>sign up</a></li>
+            </ul>
+
+        </div>
+    </div>
+
+<div id="hello1">
+</div>
+
+
+</div>
+
+
+
+
+        <!-- Header area -->
+     </video>
+        <header id="header">
+        	   
+
+            <div class="center text-center">
+                <h1 class="bigheadline">Choice park</h1>
+                <h4 class="subheadline">nothing to everyting</h4>
+            </div>
+            <div class="bottom">
+                <a data-scroll href="#navigation" class="scrollDown animated pulse" id="scrollToContent"><i class="pe-7s-angle-down-circle pe-va"></i></a>
+            </div>
+            
+        </header>
+
+
+ <!-- Navigation area -->
+        <section id="navigation">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-6">
+                        <div class="logo"><a data-scroll href="#body" class="logo-text">About us</a></div>
+                    </div>
+                    <div class="col-xs-6">
+                        
+                            
+                        </div>
+                    </div>
+
+                </div>
+                      
+        </section>
+        
+        <!-- Content Area -->
+
+
+<!-- Testimonial Area -->
+
+        <section id="testimonial" class="testimonial-area">
+            <div class="container">
+                <h2 class="block_title">Life Of Choice Park</h2>
+                <div class="row">
+                    <div class="col-xs-12">
+                    </div>
+                    <div id="testimonial-container" class="col-xs-12">
+                        <div class="testimonila-block">
+                            <img src="assets/images/vision.png" alt="clients" class="selfshot">
+                            <p>"To bring inspiration and innovation to every athlete in the world"</p>
+                            <strong>Our Vision</strong>
+                            
+                        </div>
+                        <div class="testimonila-block">
+                            <img src="assets/images/a.jpg" alt="clients" class="selfshot">
+                            <p>"We will provide branded products and services of superior quality and value that improve the lives of the world’s consumers"</p>
+                            <strong>Our Mission</strong>
+                       
+                        </div>
+                        <div class="testimonila-block">
+                            <img src="assets/images/z.jpg" alt="clients" class="selfshot">
+                            <p>We provide broad range of buy and selling in the industry of textile, cosmetics, gift items, electronic and electric items etc.., retail and wholesale. We serve for the successful development of small business and medium entrepreneurial industry as well as we assist entrepreneurial sector, through the growth stages and toward business development, ensuring regulatory compliance along the way.
+
+With over 38 years of experience we have built up a wealth of knowledge in our field and we are operating with six branches with fame in the textile industry in the North Central Province, and Central Province to be noted. We are renowned for our extensive service. All of our services are here to satisfy the customer needs and wants with a variety of choices where our motto is “everything is for your choice”.
+
+Our head office is located at no. 32, Main Street, Kekirawa, and we are working with an expert team of business consultants who are very motivated and have made us building up a solid reputation with our customers due to our professional and personal service.</p>
+                            <strong>Our Service</strong>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div><!-- container -->
+        </section><!-- testimonial -->
+
+
+
+ <!-- Portfolio Area -->
+
+        <section id="portfolio" class="portfolio-area">
+            <div class="container">
+                <h2 class="block_title">Our Branchers</h2>
+                <div class="row port cs-style-3">
+                    <div class="col-md-4 col-sm-6 col-xs-12 item-space">
+                        <figure>
+                            <img src="assets/images/b.jpg" alt="img04">
+                            <figcaption>
+                                <h3>Mathara</h3>
+                                <span>241/Akuressa</span>
+                                <a href="#" class="button" >Take a Photo</a>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-xs-12 item-space">
+                        <figure>
+                            <img src="assets/images/b1.jpg" alt="img01">
+                            <figcaption>
+                                <h3>Colombo</h3>
+                                <span>Col 3</span>
+                                <a href="#" class="button" >Take a Photo</a>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-xs-12 item-space">
+                        <figure>
+                            <img src="assets/images/b3.jpg" alt="img02">
+                            <figcaption>
+                                <h3>Jaffna</h3>
+                                <span>34/Nallur</span>
+                                <a href="#" class="button" >Take a Photo</a>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    
+                     
+                </div>
+            </div><!-- container -->
+        </section><!-- portfolio -->
+
+
+
+<section id="video-bg" class="hidden-sm hidden-xs">
+    <div id="bgndVideo" class="player"
+         data-property="{videoURL:'https://youtu.be/9giqL1H6yRs',containment:'#video-bg',autoPlay:true, mute:true, showControls:false, startAt:80, stopAt:259, opacity:1}">
+    </div>
+    <div id="video-content">
+         
+               
+                            <ul class="scoialinks">
+                                <li class="normal-txt">Find Us On</li>
+                                <li class="social-icons"><a class="facebook" href="#"></a></li>
+                                <li class="social-icons"><a class="twitter" href="#"></a></li>
+                                <li class="social-icons"><a class="linkedin" href="#"></a></li>
+                                <li class="social-icons"><a class="google-plus" href="#"></a></li>
+                                <li class="social-icons"><a class="wordpress" href="#"></a></li>
+                            </ul>
+                        
+        </div>
+</section>
+
+
+
+
+
+
+
+                            <!-- footer -->
+                            <footer>
+                                <div class="container">
+                                    <div class="col-md-3">
+                                        <div class="single-footer footer-contact">
+                                            <h2>contact us</h2>
+                                            <ul>
+                                                <li>
+                                                    <i class="fa fa-phone"></i>
+                                                    <span>+94 81 4950076</span>
+                                                </li>
+                                                <li>
+                                                    <i class="fa fa-envelope"></i>
+                                                    <span>info@choicepark.lk</span>
+                                                </li>
+                                                <li>
+                                                    <i class="fa fa-map-marker"></i>
+                                                    <span>91, Matale Road Akurana</span>
+                                                    <span>Kandy SL.</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="single-footer footer-menu">
+                                            <h2>company</h2>
+                                            <ul>
+                                                <li><a href="profile.html">Seller Login</a></li>
+                                                <li><a href="login.html">Seller Register</a></li>
+                                                <li><a href="register.html">Profile</a></li>
+                                                <li><a href="products.html">Products</a></li>
+                                                <li><a href="cart.html">Checkout</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="single-footer footer-menu">
+                                            <h2>Policies & Info</h2>
+                                            <ul>
+                                                <li><a href="termsAndConditions.html">Term & Conditions</a></li>
+                                                <li><a href="FAQs.html">FAQs</a></li>
+                                                <li><a href="policyforBuyer.html">Policy for Buyer</a></li>
+                                                <li><a href="shippingAndRefund.html">Shipping & Refund</a></li>
+                                                <li><a href="wholesalePolicy.html"> Wholesale policy</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="single-footer footer-message">
+                                            <form action="#">
+                                                <h2>Quick contact</h2>
+                                                <div class="footer-message-box">
+                                                    <input type="text" placeholder="your email address" />
+                                                    <textarea placeholder="your messege" ></textarea>
+                                                    <input type="submit" value="submit"/>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <div class="col-md-6 col-sm-6 col-xs-12">
+                                        <div class="copyright-brief">
+                                            <p>Copyright &copy; <a href="">Choice Park (PVT) Ltd</a> All right reserved</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-sm-6 col-xs-12 " >
+                                        <div class="social ">
+                                            <a class="h-facebook" href="#"><i class="fa fa-facebook"></i></a>
+                                            <!-- <a class="h-google" href="#"><i class="fa fa-google-plus"></i></a> -->
+                                            <a class="h-linkedin" href="#"><i class="fa fa-linkedin"></i></a>
+                                            <a class="h-twitter" href="#"><i class="fa fa-twitter"></i></a>
+                                        </div>
+                                    </div>
+                                    <!-- social media links -->
+                                    <!-- <div class="social">
+                                        <a class="h-facebook" href="#"><i class="fa fa-facebook"></i></a>
+                                        <a class="h-google" href="#"><i class="fa fa-google-plus"></i></a>
+                                        <a class="h-linkedin" href="#"><i class="fa fa-linkedin"></i></a>
+                                        <a class="h-twitter" href="#"><i class="fa fa-twitter"></i></a>
+                                    </div> -->
+                                    <!-- copy right -->
+                                    <!-- <p class="copy-right">&copy; copyright 2018, All rights are reserved.</p>
+                                </div> -->
+
+                            </footer>
+                            <!-- footer end -->
+
+                            <!-- Scroll to top -->
+                            <span class="totop"><a href="#"><i class="fa fa-chevron-up fa-lg"></i></a></span>
+
+                        </div>
+
+
+
+
+ <!-- Necessery scripts -->
+        <script src="assets/js/jquery-2.1.3.min.js"></script>
+        <script src="assets/js/bootstrap.min.js"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+        <script src="assets/js/jquery.actual.min.js"></script>
+        <script src="assets/js/smooth-scroll.js"></script>
+        <script src="assets/js/owl.carousel.js"></script>
+        <script src="assets/js/script.js"></script>
+            <script src="js/jquery.mb.YTPlayer.min.js"></script>
+            <script src="js/jquery.fancybox.pack.js"></script>
+
+<script src="js/jquery.flexslider-min.js"></script>
+
+<script src="node_modules/waypoints/lib/jquery.waypoints.min.js"></script>
+
+<script src="js/scripts.min.js"></script>
+
+
+
+</body>
+</html>
